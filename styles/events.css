@@ -1,0 +1,158 @@
+body {
+    background-color: rgb(26, 26, 26);
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+    color: #ffffff;
+    background-image: url("../resources/sample-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 3% 5%;
+
+}
+a {
+    text-decoration: none;
+}
+
+.container1 {
+    text-align: center;
+}
+.container1 img {
+    filter: brightness(90%) drop-shadow(0 0 .08rem #ffffff5d);
+    border-radius: 5%;
+}
+.container1 img:hover {
+    filter: brightness(100%);
+}
+
+
+
+
+.container2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+.heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(to right, #fc04c6, #9904fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.container3 {
+    margin: 3em auto 2em;
+    text-align: center;
+}
+.co-ordinators {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.buttons {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.3em;
+}
+.registerButton, .contactButton {
+    font-size: 400;
+    letter-spacing: 1px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: .8rem;
+    padding: 10px 20px;
+}
+.registerButton:hover, .contactButton:hover {
+    box-shadow: 0 0 .5rem #ffffff;
+    font-weight: 500;
+}
+
+
+hr {
+    border: 1px solid #3a3a3a;
+}
+.developer {
+    color: #979797;
+    text-align: center;
+    font-size: .6rem;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@media (min-width:426px) and (max-width:768px) {
+    body {
+        margin: 3% 15%;
+    }
+    .container1 img {
+        width: 40%;
+    }
+    .developer {
+        font-size: .7rem;
+    }
+}
+
+@media (min-width:769px) {
+    body {
+        margin: 3% 20%;
+    }
+    .container1 img {
+        width: 30%;
+    }
+    .developer {
+        font-size: .8rem;
+    }
+    .registerButton, .contactButton {
+        font-size: 1rem;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3em;
+    }
+    .heading {
+        font-size: 1.9rem;
+    }
+    .container2 {
+        font-size: 1.6rem;
+    }
+    .co-ordinators {
+        font-size: 1.5rem;
+    }
+    .developer {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width:1600px) {
+    body {
+        margin: 3% 25%;
+    }
+    .container1 img {
+        width: 30%;
+    }
+    .developer {
+        font-size: 1.2rem;
+    }
+    .registerButton, .contactButton {
+        font-size: 1.4rem;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3.5em;
+    }
+    .heading {
+        font-size: 2.3rem;
+    }
+    .container2 {
+        font-size: 2rem;
+    }
+    .co-ordinators {
+        font-size: 1.9rem;
+    }
+}

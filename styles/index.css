@@ -1,0 +1,854 @@
+/* color:#4CC66C hover color
+#7CE2D6
+#AE81FE
+#8A75FF 
+ font-family: 'Cinzel', serif;
+font-family: 'Limelight', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Cinzel Decorative', cursive; 
+font-family: 'Josefin Sans', sans-serif; */
+
+
+body {
+    background-color: rgb(26, 26, 26);
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+    color: #ffffff;
+    background-image: url("../resources/sample-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+
+#Navbar {
+    /* margin: 2% 10%; */
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+.nav-items {
+    color: #ffffff;
+}
+.nav-items:hover {
+    background: linear-gradient(to right, #fc04c6, #a324ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a {
+    text-decoration: none;
+}
+#logo {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+/* Mobile First */
+
+/* Home */
+/* #Home {
+    
+    margin: -3% -3%;
+} */
+
+#HeroSection {
+    text-align: center;
+}
+
+.collegeNameLogo {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 1% 6%;
+    place-items: center; 
+}
+.collegeLogo {
+    width: 10%;
+    height: 6%;
+}
+.isoLogo {
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+}
+.header {
+    letter-spacing: .5px;
+    text-align: center;
+}
+.collegeName {
+    font-size: .75rem;
+}
+.collegeAddress {
+    font-size: .6rem;
+}
+.deptName {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+.heroImg {
+    width: 35%;
+}
+.proudly {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+.eventName {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    color: transparent;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../resources/boliviainteligente-qsYZIWz8TI4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 1000px;
+    filter: brightness(130%);
+    margin: -.5em auto;
+}
+.global{
+    margin-bottom: -35px;
+}
+/* .heroImg {
+    border-radius: 5%;
+    filter: drop-shadow(0 0 .5rem #a0e14cda);
+} */
+.date {
+    font-size: 1.3rem;
+    font-weight: 300;
+    /* background: linear-gradient(to right, #ff00c8 40%, #a324ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+.thanks {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.heroButtons {
+    display:inline-flex;
+    flex-direction: column;
+    gap: 2em;
+    letter-spacing: 1PX;
+    margin-bottom: 3%;
+}
+.registerButton, .contactButton {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: .9rem;
+    padding: 10px 20px;
+}
+.registerButton:hover , .contactButton:hover{
+    box-shadow: 0 0 .5rem #ffffff;
+    font-weight: 500;
+}
+
+
+
+/* Carousel */
+
+/* #Carousel {
+    margin: 15% auto;
+}
+
+.guesttext {
+    text-align: center;
+    font-size: 1.4rem;
+    background: linear-gradient(to right, #fc04c6, #a324ec, #4c00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+  
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.carousel-item {
+    flex: 1 0 100%;
+    margin-right: 20px;
+    text-align: center;
+} */
+  
+
+/* About  */
+
+#About {
+    margin: 10% 5% 16%;
+}
+.aboutHeading {
+    /* text-shadow: 0 0 30px #91ff00; */
+    font-size: 1.4rem;
+    background: linear-gradient(to right, #fc04c6, #a324ec, #4c00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 4px;
+    font-weight: 400;
+}
+.aboutImage {
+    border-radius: 5%;
+    /* filter: drop-shadow(0 0 .2rem #a0e14c52); */
+}
+.aboutPara {
+    font-weight: 200;
+    line-height: 1.7;
+    word-spacing: 1.5px;
+    font-size: 1.1rem;
+}
+.aboutDepartment, .aboutEvent {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Events  */
+
+#Events {
+    text-align: center;
+}
+
+.eventHeading {
+    background: linear-gradient(to right,#fc04c6, #e100ff, #a324ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.techEvents, .nonTechEvents {
+    display: grid;
+    place-items: center;
+    /* gap: 2em; */
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+.listOfEvents h1 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 2em auto;
+}
+.listOfEvents a {
+    color: #ffffff;
+}
+.event {
+    width: 350px;
+    position: relative;
+}
+.event img {
+    width: 90%;
+    text-align: center;
+    border-radius: 5%;
+    filter: brightness(90%);
+    filter: drop-shadow(0 0 .08rem #ffffff5d);
+}
+.event img:hover{
+    filter: brightness(100%);
+}
+.event p {
+    position: absolute;
+    font-size: 1.5rem;
+    text-align: center;
+    top: 80%;
+    left: 10%;
+}
+
+/* #Contact */
+
+.contactHeading{
+    text-align: center;
+    font-size: 1.4rem;
+    background: linear-gradient(to right, #fc04c6, #a324ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 2em auto 1em;
+}
+.contactIcon {
+    font-size: 3rem;
+    background: linear-gradient(to right, #fc04c6, #b941ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contactContainer a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 300;
+    display: block;
+}
+.contactContainer div {
+    margin: 7%;
+    font-weight: 300;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+
+hr {
+    border: 1px solid #3a3a3a;
+}
+
+.developer {
+    color: #979797;
+    text-align: center;
+    font-size: .6rem;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20%;
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    #logo {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    
+    /* Navbar */
+    #NavContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        background-color:rgb(26, 26, 26);
+        width: 100vw;
+        height: 50vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .8s;
+        z-index: 2;
+    }
+    .menuTouched{
+        transform: translateY(-100vh);
+        transition: .8s;
+    }
+    
+    .nav-items {
+        font-size: 1.1rem;
+        background: linear-gradient(to right, #fc04c6, #a324ec, #4c00ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 500;
+        padding-left: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-transform: uppercase;
+    }
+    /* .nav-items:hover {
+        background-color: rgb(0, 0, 0);
+        font-weight: 400;
+
+    } */
+    .nav-items:nth-child(1) {
+        margin-top: 1.5em;
+    }
+
+    /* Menubar */
+    .menu {
+        background: white;
+        width: 23px;
+        height: 2.5px;
+        margin: 4.5px auto;
+        /* z-index: 10; */
+        border-radius: 10px;
+    }
+    .menuContainer {
+        position: relative;
+        z-index: 3;
+    }
+    .m1 {
+        transform: rotate(45deg);
+        margin-top: 8px ;
+        background: white;
+        border-radius: 0;
+    }
+    .m2 {
+        transform: rotate(-45deg);
+        margin-top: -7px ;
+        background: white;
+        border-radius: 0;
+    }
+    .m3 {
+        display: none;
+    }
+
+}
+@media (max-width:374px) {
+    .techEvents, .nonTechEvents {
+        display: grid;
+        place-items: center;
+        column-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    }
+    .event img {
+        width: 80%;
+    }
+}
+
+
+/* Mobile view */
+
+@media (max-width:425px) {
+    body {
+        margin: 3% 3%;
+    }
+    #Navbar {
+        margin: auto 2%;
+    }
+    
+    /* sponsors */
+
+    .sponsors {
+        align-items: center;
+        margin: 1.2em auto;
+    }
+    .sponsors p {
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+    .sponsorsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        justify-content: center;
+        grid-gap: 10px;
+        place-items: center;
+    }
+    .foodSponsors img{
+        margin: 20px 20px;
+    }
+    .techEvents, .nonTechEvents {
+        display: grid;
+        gap: 3em;
+    }
+    .contactContainer a {
+        font-size: 1.05rem;
+    }
+    .event p {
+        position: absolute;
+        top: 80%;
+        left: 13%;
+    }
+}
+
+
+/* Tablet view  */
+
+@media (min-width:426px) and (max-width:768px) {
+
+    body {
+        margin: 3% 5%;
+    }
+    /* Menubar */
+    .menu {
+        width: 27px;
+        height: 3px;
+        margin: 5.5px auto;
+    }
+    .m1 {
+        margin-top: 11px ;
+    }
+    .m2 {
+        margin-top: -8px ;
+    }
+    #Navbar {
+        margin: auto 2%;
+    }
+
+    /* Hero section */
+
+    .collegeName {
+        font-size: 1.2rem;
+    }
+    .collegeAddress {
+        font-size: 1rem;
+    }
+    .deptName {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    .proudly {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+    }
+    .eventName {
+        font-size: 2.7rem;
+    }
+    /* .heroImg {
+        border-radius: 5%;
+        filter: drop-shadow(0 0 .5rem #a0e14cda);
+    } */
+    .date {
+        font-size: 1.6rem;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+    }
+    /* sponsors */
+
+    .sponsors {
+        align-items: center;
+        margin: 1.2em auto;
+    }
+    .sponsors p {
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+    .sponsors img {
+        width: 42%;
+    }
+    .sponsorsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        justify-content: center;
+        grid-gap: 10px;
+        place-items: center;
+    }
+    .foodSponsors img{
+        width: 15%;
+        margin: 20px 40px;
+    }
+    .thanks {
+        font-size: 1.5rem;
+    }
+    .heroButtons {
+        display:flex;
+        flex-direction: row;
+        place-content: center;
+        gap: 2em;
+        letter-spacing: 1px;
+    }
+    .registerButton, .contactButton {
+        font-size: 1rem;
+        padding: 12px 24px;
+        /* box-shadow: 0 0 10px #a0e14cdc; */
+    }
+    .registerButton:hover , .contactButton:hover{
+        font-weight: 500;
+    }
+
+
+    /* About  */
+    .aboutHeading {
+        /* text-shadow: 0 0 30px #91ff00; */
+        font-size: 1.8rem;
+    }
+    .aboutPara {
+        font-size: 1.45rem;
+    }
+
+
+    /* Events  */
+
+    .eventHeading {
+        font-size: 1.8rem;
+    }
+    .techEvents, .nonTechEvents {
+        display: grid;
+        place-items: center;
+        gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+    .listOfEvents h1 {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+    .event p {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+
+    /* #Contact */
+
+    .contactHeading{
+        font-size: 1.8rem;
+        margin: 2em auto 1em;
+    }
+    .location p {
+        font-size: 1.45rem;
+        letter-spacing: .5px;
+    }
+    .contactIcon{
+        font-size: 2.5rem;
+    }
+    .contactContainer a {
+        font-size: 1.45rem;
+        font-weight: 300;
+        display: block;
+    }
+    .personalContact a {
+        margin-bottom: 1em;
+    }
+
+    .developer {
+        font-size: .85rem;
+    }
+    .developer {
+        margin-left: 30%;
+    }
+
+}
+
+
+/* Laptop view*/
+
+@media (min-width:769px) {
+
+    body {
+        margin: 3% 6%;
+    }
+    
+    /* Navbar */
+    
+    .menuContainer {
+        display: none;
+    }
+
+    #NavContainer {
+        display: flex;
+        gap: 3em;
+        font-size: 1rem;
+    }
+    .collegeNameLogo {
+        margin: 4% auto 6%;
+    }
+    .collegeLogo {
+        width: 7%;
+        height: 5%;
+    }
+    .isoLogo {
+        width: 9%;
+        height: 9%;
+    }
+    .collegeName {
+        font-size: 1.35rem;
+    }
+    .heroImg {
+        width: 20%;
+    }
+    .collegeAddress {
+        font-size: 1.15rem;
+    }
+
+    
+    /* sponsors */
+
+    .sponsors {
+        align-items: center;
+        margin: 1.7em auto;
+    }
+    .sponsors p {
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    .sponsorsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        justify-content: center;
+        grid-gap: 10px;
+        place-items: center;
+    }
+    .sponsorsContainer img {
+        width: 40%;
+    }
+    .foodSponsors img{
+        width: 12%;
+        margin: 20px 60px;
+    }
+    .thanks {
+        font-size: 1.6rem;
+    }
+
+    /* About  */
+    #About {
+        margin: 10% auto 16%;
+    }
+    .aboutHeading {
+        /* text-shadow: 0 0 30px #91ff00; */
+        font-size: 1.4rem;
+    }
+    .aboutPara {
+        font-size: 1.1rem;
+    }
+    .aboutDepartment {
+        display: flex;
+        flex-direction: row-reverse;
+        place-items: center;
+        gap: 2em;
+        margin-bottom: 8em;
+    }
+    .aboutEvent {
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        gap: 2em;
+    }
+    .aboutImage {
+        width: 40%;
+        height: 10%;
+    }
+
+
+    /* Events  */
+
+    .eventHeading {
+        font-size: 1.8rem;
+    }
+    .techEvents, .nonTechEvents {
+        display: grid;
+        place-items: center;
+        gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+    .listOfEvents h1 {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+    .event p {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+    .event8 p{
+        font-size: 1.3rem;
+    }
+
+
+    /* #Contact */
+
+    .contactHeading{
+        font-size: 1.8rem;
+        margin: 2em auto 1em;
+    }
+    .location p {
+        font-size: 1.45rem;
+        letter-spacing: .5px;
+    }
+    .icon {
+        font-size: 2.5rem;
+    }
+    .contactContainer a {
+        font-size: 1.45rem;
+        font-weight: 300;
+        display: block;
+    }
+    .personalContact a {
+        margin-bottom: 1em;
+    }
+
+    .developer {
+        font-size: .85rem;
+    }
+    .developer {
+        margin-left: 35%;
+    }
+    
+}
+
+@media (min-width:1024px) {
+
+    body {
+        margin: 2% 13%;
+    }
+    .nav-items {
+        font-size: 1rem;
+    }
+    #logo {
+        font-size: 1.4rem;
+    }
+    .collegeNameLogo {
+        margin: 3% 12% 5%;
+    }
+    .collegeLogo {
+        width: 6%;
+        height: 4%;
+    }
+    .isoLogo {
+        width: 7%;
+        height: 7%;
+    }
+    .deptName {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    .proudly {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+    }
+    .eventName {
+        font-size: 2.9rem;
+    }
+    .date {
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+    }
+    .sponsors img {
+        width: 72%;
+    }
+    .sponsorsContainer {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        justify-content: center;
+        grid-gap: 10px;
+        place-items: center;
+    }
+    .sponsorsContainer img {
+        width: 50%;
+    }
+    .foodSponsors img{
+        width: 10%;
+        margin: 20px 20px;
+    }
+    .heroButtons {
+        display:flex;
+        flex-direction: row;
+        place-content: center;
+        gap: 2em;
+        letter-spacing: 1px;
+    }
+    .registerButton, .contactButton {
+        font-size: 1rem;
+        padding: 12px 24px;
+        /* box-shadow: 0 0 10px #a0e14cdc; */
+    }
+    .registerButton:hover , .contactButton:hover{
+        font-weight: 500;
+    }
+    .contactContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width:1300px) {
+    body {
+        margin: 2% 14%;
+    }
+    .collegeNameLogo {
+        margin: 3% 20% 5%;
+    }
+    .sponsorsContainer img {
+        width: 40%;
+    }
+    .foodSponsors img{
+        width: 8%;
+        margin: 20px 30px;
+    }
+}
+
